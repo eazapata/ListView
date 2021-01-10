@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Lesson7">
+
+    <TextView
+        android:id="@+id/redText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/titleActivity7"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textSize" />
+
+    <Button
+        android:id="@+id/timeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/redText"
+        android:layout_centerHorizontal="true"
+        android:onClick="changeTextColor"
+        android:text="time" />
+
+    <TextView
+        android:id="@+id/timeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/redText"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textSize" />
+
+    <ImageButton
+        android:id="@+id/imgButton"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/timeText"
+        android:background="@mipmap/captura_android"
+        android:onClick="copyText" />
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_below="@id/imgButton"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:src="@mipmap/captura_android" />
+
+    <EditText
+        android:id="@+id/initialText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/icon"
+        android:background="@color/yellow"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/copiedText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/initialText"
+        android:background="@color/white"
+        android:textColor="@color/black" />
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/copiedText"
+        android:checked="false"
+        android:onClick="setCheckBoxText"
+        android:text="@string/checkboxText"
+        android:textSize="@dimen/textSize" />
+
+    <TextView
+        android:id="@+id/pickAColour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkbox"
+        android:text="@string/pickAColour"
+        android:textSize="@dimen/textSize" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pickAColour">
+
+        <RadioButton
+            android:id="@+id/blue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pickAColour"
+            android:onClick="setColour"
+            android:text="@string/blue"
+            android:textSize="@dimen/textSize" />
+
+        <RadioButton
+            android:id="@+id/red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/blue"
+            android:onClick="setColour"
+            android:text="@string/red"
+            android:textSize="@dimen/textSize" />
+
+        <RadioButton
+            android:id="@+id/green"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/red"
+            android:onClick="setColour"
+            android:text="@string/green"
+            android:textSize="@dimen/textSize" />
+    </RadioGroup >
+
+</RelativeLayout>

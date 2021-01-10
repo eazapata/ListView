@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Lesson41_1_5">
+
+    <EditText
+        android:id="@+id/capitalize"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter a message"
+        android:inputType="textCapSentences|textAutoCorrect|textEmailAddress" />
+
+    <Button
+        android:id="@+id/capitalizeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/capitalize"
+        android:onClick="showMessage"
+        android:text="@string/showToast" />
+
+    <EditText
+        android:id="@+id/phoneText"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/capitalizeButton"
+        android:hint="@string/phoneText"
+        android:inputType="phone" />
+
+    <Spinner
+        android:id="@+id/spinnerPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/capitalizeButton"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/phoneText" />
+
+    <TextView
+        android:id="@+id/textAlert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phoneText"
+        android:text="@string/textViewAlert" />
+
+    <Button
+        android:id="@+id/buttonAlert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textAlert"
+        android:onClick="createDialog"
+        android:text="alert" />
+
+    <TextView
+        android:id="@+id/alertResponse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonAlert" />
+
+    <TextView
+        android:id="@+id/dateTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/alertResponse"
+        android:text="@string/chooseDateTime" />
+
+    <Button
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dateTime"
+        android:onClick="showDatePickerDialog"
+        android:text="@string/getDate" />
+
+    <Button
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dateTime"
+        android:layout_toRightOf="@id/date"
+        android:onClick="showTimePickerDialog"
+        android:text="@string/getTime" />
+
+</RelativeLayout>

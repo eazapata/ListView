@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">ListView</string>
+    <string name="titleActivity7">Were you expecting something profound?</string>
+    <string name="checkText">This checkbox is: unchecked</string>
+    <string name="pickAColour">Pick a beautiful colour</string>
+    <string name="blue">Blue</string>
+    <string name="red">Red</string>
+    <string name="green">Green</string>
+    <string name="checkboxText">This checkbox is unchecked.</string>
+    <string name="showToast">SHOW</string>
+    <string name="phoneText">Enter a phone number</string>
+    <string name="textViewAlert">Tap to test alert</string>
+    <string name="getTime">Time</string>
+    <string name="getDate">Date</string>
+    <string-array name="phone_options">
+        <item>Home</item>
+        <item>Work</item>
+        <item>Mobile</item>
+        <item>Other</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="chooseDateTime">Choose the date and time</string>
+</resources>
