@@ -21,4 +21,19 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="chooseDateTime">Choose the date and time</string>
+    <string name="intro_text">Droid Desserts</string>
+    <string name="choose_dessert">Choose a dessert</string>
+    <string name="donut_description">Donuts are glazed and sprinkled with candy</string>
+    <string name="ice_cream_sandwiches">Ice sandwiches have chocolate wafers and vanilla filling.</string>
+    <string name="froyo">FroYo is premium self-serve frozen yogurt.</string>
+    <string name="donut_order_message">You ordered a donut.</string>
+    <string name="ice_cream_order_message">You ordered an ice cream sandwich.</string>
+    <string name="froyo_order_message">You ordered a FroYo.</string>
+    <string name="choose_delivery_method">Choose a delivery method.</string>
+    <string name="same_day">Same day messenger service.</string>
+    <string name="next_day">Next day ground delivery</string>
+    <string name="pick_up">Pick up</string>
+    <string name="chosen">Chosen: </string>
+    <string name="nothing_clicked">onRadioButtonClicked: Nothing clicked.</string>
+    <string name="hello_i_m_lesson_12">Hello, i\'m Lesson 12</string>
 </resources>

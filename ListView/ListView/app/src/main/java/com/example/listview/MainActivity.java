@@ -36,6 +36,10 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 intent = new Intent(this,Lesson41_1_5.class);
                 startActivity(intent);
                 break;
+            case 2:
+                intent = new Intent(this,Lesson41_6.class);
+                startActivity(intent);
+                break;
         }
     }
 }
