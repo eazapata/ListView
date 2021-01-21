@@ -21,7 +21,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class Lesson41_1_5 extends AppCompatActivity implements TextView.OnEditorActionListener, AdapterView.OnItemSelectedListener{
+public class    Lesson41_1_5 extends AppCompatActivity implements TextView.OnEditorActionListener, AdapterView.OnItemSelectedListener{
 
     EditText phoneEdit;
     private static final int PERMISSION_REQUEST_CODE = 1;
@@ -97,6 +97,7 @@ public class Lesson41_1_5 extends AppCompatActivity implements TextView.OnEditor
     public void onNothingSelected(AdapterView<?> parent) {
 
     }
+
     public void createDialog(View v) {
         final TextView alertResponse = (TextView) findViewById(R.id.alertResponse);
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
@@ -117,10 +118,12 @@ public class Lesson41_1_5 extends AppCompatActivity implements TextView.OnEditor
         AlertDialog dialog = builder.create();
         dialog.show();
     }
+
     public void showTimePickerDialog(View v) {
         DialogFragment newFragment = new timeFragment();
         newFragment.show(getSupportFragmentManager(), "timePicker");;
     }
+
     public void showDatePickerDialog(View v) {
         DialogFragment newFragment = new dateFragment();
         newFragment.show(getSupportFragmentManager(), "datePicker");

@@ -3,12 +3,14 @@ package com.example.listview;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.graphics.Color;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.TextView;
 
@@ -27,7 +29,6 @@ public class Lesson7 extends AppCompatActivity {
 
         textView = (TextView) findViewById(R.id.redText);
         imgButton = (ImageButton) findViewById(R.id.imgButton);
-        //  imgButton.playSoundEffect(SoundEffectConstants.CLICK);
     }
 
     public void changeTextColor(View v) {
@@ -41,13 +42,16 @@ public class Lesson7 extends AppCompatActivity {
         String strDate = dateFormat.format(date);
         String strHour = hourFormat.format(date);
         timeText.setText(strDate + " " + strHour);
+        timeText.setBackgroundColor(Color.argb(255,0,255,0));
         textView.setTextColor(Color.argb(255, 255, 0, 0));
+
     }
 
     public void copyText(View v) {
         EditText initial = (EditText) findViewById(R.id.initialText);
         EditText copy = (EditText) findViewById(R.id.copiedText);
         copy.setText(initial.getText());
+        makeSound();
     }
 
     public void setCheckBoxText(View v) {
@@ -76,4 +80,9 @@ public class Lesson7 extends AppCompatActivity {
         }
 
     }
+    public void makeSound(){
+        MediaPlayer ring= MediaPlayer.create(Lesson7.this,R.raw.gato);
+        ring.start();
+    }
+
 }

@@ -11,7 +11,7 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:hint="Enter a message"
-        android:inputType="textCapSentences|textAutoCorrect|textEmailAddress" />
+        android:inputType="textCapSentences|textEmailAddress" />
 
     <Button
         android:id="@+id/capitalizeButton"

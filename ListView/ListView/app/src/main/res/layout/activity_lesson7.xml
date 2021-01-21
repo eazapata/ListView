@@ -38,7 +38,7 @@
         android:layout_height="60dp"
         android:layout_below="@id/timeText"
         android:background="@mipmap/captura_android"
-        android:onClick="copyText" />
+        android:onClick="copyText"/>
 
     <ImageView
         android:id="@+id/icon"

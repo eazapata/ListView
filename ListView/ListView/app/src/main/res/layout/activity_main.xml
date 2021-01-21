@@ -10,16 +10,23 @@
 
     <TextView
         android:text="@string/hello_i_m_lesson_12"
-        android:textSize="@dimen/textSize"
+        android:textSize="@dimen/initText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:textColor="@color/white"/>
+        android:textColor="@color/white"
+        android:layout_marginBottom="50dp"
+        android:shadowColor="@android:color/white"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="20"/>
     <ListView
         android:id="@+id/listView"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:background="@color/greenBackground"
-        android:layout_gravity="center_horizontal"/>
+        android:listSelector="@drawable/shape"
+        android:divider="@drawable/divider"
+        android:dividerHeight="4sp"/>
 
 </LinearLayout>

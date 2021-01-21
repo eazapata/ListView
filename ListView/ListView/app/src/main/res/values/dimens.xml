@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="textSize">18dp</dimen>
+    <dimen name="textSize">18sp</dimen>
+    <dimen name="initText">30sp</dimen>
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="intro_size">24sp</dimen>
     <dimen name="padding_intro">10dp</dimen>

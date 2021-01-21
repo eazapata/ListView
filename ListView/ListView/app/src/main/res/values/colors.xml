@@ -11,4 +11,7 @@
     <color name="yellow">#ffff00</color>
     <color name="blue">#0000ff</color>
     <color name="white">#ffffff</color>
+    <color name="blueBackground">#306789</color>
+    <color name="letter">#ffc733</color>
+    <color name="orange">#C98D2E</color>
 </resources>
